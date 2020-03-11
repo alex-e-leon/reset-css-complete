@@ -1,0 +1,18 @@
+{
+  "name": "reset-css-complete",
+  "version": "1.0.0",
+  "description": "A complete CSS reset file for all modern browsers",
+  "main": "reset.css",
+  "repository": "alex-e-leon/reset-css-complete",
+  "author": "alex leon <alex@leon.st>",
+  "license": "ISC",
+  "files": [
+    "reset.css"
+  ],
+  "keywords": [
+    "reset.css",
+    "reset",
+    "normalize",
+    "css"
+  ]
+}
