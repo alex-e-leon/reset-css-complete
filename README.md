@@ -10,6 +10,8 @@ and then from JS it's as easy as: `import reset from 'reset-css-complete';`
 
 or if using webpack you can import it in your css files directly with: `@import '~reset-css-complete/reset.css';`
 
+Note that reset-css-complete doesn't define any typography rules (all elements are set to inherit) so you'll likely want to set some global `font:` rules - (I define mine in `:root {}`)
+
 ## Why build another reset.css?
 
 Most reset.css files don't actually completely reset all elements.
@@ -42,3 +44,8 @@ Test it yourself or take a look at the beautiful minimilism you'll get at the re
 [test page][1].
 
 [1]: https://alex-e-leon.github.io/reset-css-complete/test/
+
+## Thanks
+
+This project was heavily inspired by (and modified from) Eric Meyer's reset.css file
+https://meyerweb.com/eric/tools/css/reset/

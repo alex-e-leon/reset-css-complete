@@ -1,11 +1,10 @@
 /* 
-   Modified heavily off:
-   http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+   https://alex-e-leon.github.io/reset-css-complete/
 */
 
+/* General reset */
 html, body, div, span, applet, object, iframe,
+input, button, select, optgroup, textarea,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -19,69 +18,42 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
+  background: none;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
-  /* line-height is set by :root inside global-overrides */
-  /* line-height: 1; */
+  /* line-height is set by :root */
   line-height: inherit;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-:root {
-  /* set base text styles */
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-
-  /* prevents mobile browsers from sometimes scaling text */
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-
-  /* Remove sub-pixel anti-aliasing on retina devices to improve typography */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* sets box-sizing back to the sane border-box for all elements */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* reset.css doesn't reset any form elements so we do it ourselves */
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0; /* removes the margin in firefox and safari */
-  font-family: inherit;
-  font-size: 100%;
 }
 
 a {
@@ -89,37 +61,20 @@ a {
   text-decoration: none;
 }
 
-textarea,
-input {
-  border: 0;
-  background: none;
-  padding: 0;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+s, u {
+  text-decoration: none;
 }
 
 select {
-  border: 0;
-  background: none;
   appearance: none;
   -webkit-appearance: none;
 }
 
 input[type="submit"],
 button {
-  margin: 0;
   width: auto;
   overflow: visible;
-  border: none;
-  padding: 0;
   cursor: pointer;
-  background: none;
   line-height: inherit;
 
   /* Corrects inability to style clickable `input` types in iOS */
@@ -132,10 +87,24 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-mark {
-  background: none;
+/* safari requires some special resets for input type="search" */
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
-s, u {
-  text-decoration: none;
+/* some sensible global styles */
+:root {
+ /* prevents mobile browsers from sometimes scaling text */
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* sets box-sizing back to the sane border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
