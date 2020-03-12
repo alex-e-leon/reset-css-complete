@@ -10,7 +10,9 @@ and then from JS it's as easy as: `import reset from 'reset-css-complete';`
 
 or if using webpack you can import it in your css files directly with: `@import '~reset-css-complete/reset.css';`
 
-Note that reset-css-complete doesn't define any typography rules (all elements are set to inherit) so you'll likely want to set some global `font:` rules - (I define mine in `:root {}`)
+*Note that reset-css-complete doesn't define any typography rules (all elements are set to inherit)
+or other global styles so after including reset-css-complete you'll likely also want to define your own
+`font:` rules and globals - (I define mine in a second stylesheet with `:root {}`)*
 
 ## Why build another reset.css?
 

@@ -1,6 +1,4 @@
-/* 
-   https://alex-e-leon.github.io/reset-css-complete/
-*/
+/* https://github.com/alex-e-leon/reset-css-complete */
 
 /* General reset */
 html, body, div, span, applet, object, iframe,
@@ -93,6 +91,11 @@ input[type="search"] {
 }
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+/* ie 11 has it's own magic font-size rules for sub and sup */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  sub, sup {font-size:120%;}
 }
 
 /* some sensible global styles */
