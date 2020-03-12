@@ -2,6 +2,14 @@
 
 [Look ma no styles!][1]
 
+## How to reset, or how I learned to stop worrying and install css from npm
+
+`npm i reset-css-complete`
+
+and then from JS it's as easy as: `import reset from 'reset-css-complete';`
+
+or if using webpack you can import it in your css files directly with: `@import '~reset-css-complete/reset.css';`
+
 ## Why build another reset.css?
 
 Most reset.css files don't actually completely reset all elements.
