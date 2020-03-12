@@ -1,5 +1,7 @@
 # reset-css-complete
 
+[Look ma no styles!][1]
+
 ## Why build another reset.css?
 
 Most reset.css files don't actually completely reset all elements.
@@ -27,3 +29,8 @@ If you want h1's to still be larger than h2's or inputs to still look like input
 reset-css-complete has been tested on the latest versions of Chrome, Firefox, Safari, and IE Edge and 11.
 It probably works on older browsers too.
 If you've tested on an older browser or find an un-reset element, let me know - contributions are also welcome!
+
+Test it yourself or take a look at the beautiful minimilism you'll get at the reset-css-complete
+[test page][1].
+
+[1]: https://alex-e-leon.github.io/reset-css-complete/test/
