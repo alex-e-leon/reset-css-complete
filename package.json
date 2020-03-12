@@ -1,6 +1,6 @@
 {
   "name": "reset-css-complete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A complete CSS reset file for all modern browsers",
   "main": "reset.css",
   "repository": "alex-e-leon/reset-css-complete",
