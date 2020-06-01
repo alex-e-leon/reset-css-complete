@@ -2,13 +2,17 @@
 
 [Look ma no styles!][1]
 
-## How to reset, or how I learned to stop worrying and install css from npm
+## How to use it, or how I learned to stop worrying and install css from npm
 
 `npm i reset-css-complete`
 
-and then from JS it's as easy as: `import reset from 'reset-css-complete';`
+### If using webpack or some other css loader
+You can import the css file into your JS directly: `import reset from 'reset-css-complete';`
+or you can import it through webpack into your css files with: `@import '~reset-css-complete/reset.css';`
 
-or if using webpack you can import it in your css files directly with: `@import '~reset-css-complete/reset.css';`
+### If not using webpack
+You can either reference the css file at `./node-modules/reset-css-complete/reset.css`,
+write a script to move it into a new location, or just copy-paste it from this repository
 
 *Note that reset-css-complete doesn't define any typography rules (all elements are set to inherit)
 or other global styles so after including reset-css-complete you'll likely also want to define your own
@@ -25,10 +29,11 @@ So this reset.css takes it up a notch and resets everything it can to plain text
 
 ## Why would you want to reset everything?
 
-Resetting everything to a consistent baseline means that you can build your styles from the ground up.
-Any elements you don't reset globally that you want to customize requires you to reset them inside the styles you write.
-This means you often end up having to reset buttons or link elements multiple times.
-A complete reset.css means that you can use html semantically without worrying about adding unwanted styles.
+Resetting everything to a consistent baseline means that you can
+__build your styles from the ground up__ and you __never need to reset elements again__.
+Not resetting elements globally means you often end up having to reset
+buttons or link elements multiple times in different places.
+A complete reset.css allows you to use html semantically without worrying whether an element will add any styles.
 
 ## What about normalize.css?
 
