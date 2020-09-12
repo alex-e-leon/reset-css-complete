@@ -74,6 +74,7 @@ button {
   overflow: visible;
   cursor: pointer;
   line-height: inherit;
+  color: inherit;
 
   /* Corrects inability to style clickable `input` types in iOS */
   appearance: none;
